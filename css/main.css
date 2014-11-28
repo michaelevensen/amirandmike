@@ -95,11 +95,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.wrapper,
-footer {
+.wrapper {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 80px;
 }
 
 /* Hero Title */
@@ -109,7 +108,7 @@ footer {
 
 /* Columns */
 .text {
-    margin: 0 25px;
+    /*margin: 0 25px;*/
     
     display: -webkit-box;
     display: -moz-box;
@@ -370,22 +369,32 @@ input[type=email]:focus {
         -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-
-        margin: 0 10px;
     }
 
     .text div.column {
       -webkit-flex: 0 1 100%;
         -ms-flex: 0 1 100%;
         flex: 0 1 100%;
+
+         padding-bottom: 80px;
+        padding-top: 80px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20);
     }
 
+    /* columns */
     .text div.column:first-child {
         margin-right: 0;
     }
 
     .text div.column:last-child {
          margin-left: 0;
+    }
+
+    /* contact */
+    .text.contact {
+        margin: 0;
+        padding: 0;
+        border: none;
     }
 
 }
@@ -420,25 +429,11 @@ input[type=email]:focus {
 
     .statement p {
         line-height: 1.5;
-        font-size: 26px;
+        font-size: 30px;
     }
 
-    /* columns */
-    div.column {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-    }
-
-    .text div.column {
-        padding-bottom: 80px;
-        padding-top: 80px;
-    }
     
-    /* contact */
-    .text.contact {
-        margin: 0;
-        padding: 0;
-        border: none;
-    }
+    
 }
 
 
