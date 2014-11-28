@@ -96,7 +96,6 @@ textarea {
    ========================================================================== */
 
 .wrapper,
-.hero h1,
 footer {
     max-width: 1170px;
     margin: 0 auto;
@@ -104,30 +103,8 @@ footer {
 }
 
 /* Hero Title */
-.hero h1 {
-    font-weight: 700;
-    /*color: #fff;*/
-    padding-top: 120px;
-    line-height: 1.1;
-    font-size: 100px;
-}
-
 .hero {
-    padding: 60px 0;
-    /*height: 600px;*/
-    /*width: 100%;*/
-    /*margin-bottom: 90px;*/
-
-    /*background-color: gray;*/
-    background-size: cover;
-    background-position: center center;
-}
-
-/* Signatures */
-span.underline {
-    width: 280px;
-    display: inline-block;
-    border-bottom: 1px solid #000;
+    padding-top: 60px;
 }
 
 /* Columns */
@@ -191,11 +168,33 @@ span.underline {
     margin-left: 60px;
 }
 
+/* ==========================================================================
+   Titles
+   ========================================================================== */
+
+/* We're Amir and Mike */
+.hero p {
+    line-height: 1.25;
+    font-size: 100px;
+    font-weight: 700;
+}
+
 /* Mission Statement */
 .statement {
     margin: 100px 0;
 }
 
+.statement p {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.hero p,
+.statement p {
+    color: #000;
+    letter-spacing: -1px;
+}
 
 /* Contact Information */
 .text.contact {
@@ -217,15 +216,6 @@ p {
     line-height: 1.8;
 }
 
-/* Titles */
-h1 {
-    letter-spacing: -1px;
-    line-height: 1.5;
-    font-weight: 400;
-    font-size: 48px;
-    margin: 0;
-    padding: 0;
-}
 
 h2 {
     font-size: 24px;
@@ -402,8 +392,52 @@ input[type=email]:focus {
 
 @media only screen and (max-width: 800px) {
 
- h1 {
-        font-size: 30px;
+     div.wrapper {
+        padding: 0 25px;
+    }
+
+    /* text */
+    .text {
+        margin: 0;
+    }
+
+    
+    /* Titles */
+    .hero {
+        max-width: 80%;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .hero p {
+       font-size: 46px;
+    }
+
+    .statement {
+        margin: 0;
+        padding: 0;
+    }
+
+    .statement p {
+        line-height: 1.5;
+        font-size: 26px;
+    }
+
+    /* columns */
+    div.column {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    }
+
+    .text div.column {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+    
+    /* contact */
+    .text.contact {
+        margin: 0;
+        padding: 0;
+        border: none;
     }
 }
 
